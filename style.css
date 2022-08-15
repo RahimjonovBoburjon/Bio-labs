@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1;
+    font-family: inherit;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.body {
+    min-width: 320px;
+    background: #F3F4F6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*TEST SECTION START*/
+
+.test {
+    background: #081420;
+}
+
+.test__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.t-block__text {
+    display: table;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.t-block__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1D6DC3;
+}
+
+.t-block__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+/*CARD*/
+
+.t-block__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.t-block__bossblock {
+    display: flex;
+    column-gap: 30px;
+}
+
+.t-card {
+    width: 500px;
+    flex: 1 1 30%;
+    background: #192431;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    transition: 400ms;
+    border-radius: 10px;
+}
+
+.t-card:hover {
+    background: #1D6DC3;
+    box-shadow: -20px 40px 70px rgba(29, 109, 195, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.t-block__icon-1 {
+    width: 12%;
+    transform: translateY(70px);
+}
+
+.t-card:hover .t-block__icon-1 {
+    transform: translateY(-30px);
+}
+
+.t-block__icon-2 {
+    width: 12%;
+    transform: translate(276px, 78px);
+}
+
+.t-card:hover .t-block__icon-2 {
+    transform: translateY(30px);
+}
+
+.t-block__icon-3 {
+    width: 12%;
+    transform: translate(555px, 78px);
+}
+
+.t-card:hover .t-block__icon-3 {
+    transform: translateY(30px);
+}
+
+.t-card__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-top: 68px;
+    padding-left: 36px;
+}
+
+.t-card__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-left: 36px;
+    padding-top: 30px;
+}
+
+.t-card__texttitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-left: 36px;
+    padding-bottom: 20px;
+}
+
+/*HOSP SECTION START*/
+
+.hosp__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.h-card__text {
+    text-align: center;
+}
+
+.h-card__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1D6DC3;
+}
+
+.h-card__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    padding-top: 15px;
+}
+
+.h-card__bosstable {
+    display: flex;
+    column-gap: 30px;
+}
+
+.h-card__block {
+    transition: 600ms;
+}
+
+.h-card__block-1 {
+    width: 355px;
+    height: 100px;
+    background: #fff;
+    flex-direction: column;
+    transition: 400ms;
+    border-radius: 10px;
+    transform: translate(24px, 364px);
+}
+
+.h-card__img-1 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.h-card__block:hover .h-card__block-1 {
+    background: #1D6DC3;
+    box-shadow: -10px 14px 60px rgba(29, 109, 195, 0.25);
+    border-radius: 10px;
+}
+
+.h-card__textap {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #979797;
+    text-align: start;
+    padding-top: 20px;
+    padding-left: 20px;
+    transition: 600ms;
+}
+
+.h-card__block:hover .h-card__textap {
+    color: #fff;
+}
+
+.h-card__text-th {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000; 
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 8px;
+    transition: 600ms;
+}
+
+.h-card__block:hover .h-card__text-th {
+    color: #fff;
+}
